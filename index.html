@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- start of header  -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#customer">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search" onclick="searchBtn()"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="images/cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div>
+            </div>
+            <a href="#" class="btn">checkout now</a>
+        </div>
+
+    </header>
+
+    <!-- end of header -->
+
+    <!-- start of main -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>FRESH COFFEE <br> IN THE MORNING</h3>
+            <p>May Cup Of COFFEE Overflow With Peace, Love &hearts; and Pure Awesomeness Morning</p>
+            <a href="https://www.bonappetit.com/story/favorite-ways-to-make-coffee-at-home" target="_blank" class="btn">Get Yours Now</a>
+        </div>
+
+    </section>
+
+    <!-- end of main -->
+
+    <!-- Start of about -->
+
+    <section class="about" id="about">
+
+        <h1><span>ABOUT</span> US</h1>
+        <div class="rowabout">
+            <div class="image">
+                <img src="/images/about-img.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h4>What Makes Our Coffee Special...?</h4>
+                <p>a cup of freshly roasted brew enhances brain activity and helps the release of endorphins, which put you in a good mood. </p> <br>
+                <p>The natural oils and nutrients in freshly ground coffee beans also increase creativity, focus and help you be more productive throughout the day.</p>
+                <a href="https://www.poconodessertco.com/5-reasons-you-should-drink-coffee-in-the-morning" target="_blank" class="btn">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of the about -->
+
+    <!-- start of the menu -->
+
+    <section class="menu" id="menu">
+
+        <h1>OUR <span>MENU</span></h1>
+
+        <div class="tasty" id="tasty">
+            <div class="healthy">
+                <img src="/images/coffee-1.jpg" alt="">
+                <h3>Tasty And Healthy</h3>
+                <p class="price">$15.99 <span>20.99</span></p>
+                <a href="#" class="btn1">Add To Cart</a>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+            <div class="healthy">
+                <img src="/images/coffee-3.jpg" alt="">
+                <h3>Tasty And Healthy</h3>
+                <p class="price">$15.99 <span>20.99</span></p>
+                <a href="#" class="btn1">Add To Cart</a>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+            <div class="healthy">
+                <img src="/images/coffee-7.jpg" alt="">
+                <h3>Tasty And Healthy</h3>
+                <p class="price">$15.99 <span>20.99</span></p>
+                <a href="#" class="btn1">Add To Cart</a>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+            <div class="healthy">
+                <img src="/images/coffee-4.jpg" alt="">
+                <h3>Tasty And Healthy</h3>
+                <p class="price">$15.99 <span>20.99</span></p>
+                <a href="#" class="btn1">Add To Cart</a>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+            <div class="healthy">
+                <img src="/images/coffee-2.jpg" alt="">
+                <h3>Tasty And Healthy</h3>
+                <p class="price">$15.99 <span>20.99</span></p>
+                <a href="#" class="btn1">Add To Cart</a>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+            <div class="healthy">
+                <img src="/images/coffee-5.jpg" alt="">
+                <h3>Tasty And Healthy</h3>
+                <p class="price">$15.99 <span>20.99</span></p>
+                <a href="#" class="btn1">Add To Cart</a>
+                <a href="#" class="btn1">Order Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of the menu -->
+
+    <!-- start of the product -->
+
+    <section class="products" id="products">
+
+        <h1>OUR <span>PRODUCTS</span></h1>
+
+        <div class="procoffee">
+            <div class="procof" id="procof">
+                <div class="icons">
+                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                    <div class="fas fa-heart" id="heart-btn"></div>
+                    <div class="fas fa-eye" id="search-btn"></div>
+                </div>
+                <div class="content">
+                    <img src="/images/Jamaica.jpg" alt="">
+                    <h3>Jamaica Coffee</h3>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star-half-alt" id="search-btn"></div>
+                    <p class="price">$15.99 <span>20.99</span></p>
+                </div>
+            </div>
+            <div class="procof" id="procof">
+                <div class="icons">
+                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                    <div class="fas fa-heart" id="heart-btn"></div>
+                    <div class="fas fa-eye" id="search-btn"></div>
+                </div>
+                <div class="content">
+                    <img src="/images/Direct.jpg" alt="">
+                    <h3>Colombia Reserva Coffee</h3>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star-half-alt" id="search-btn"></div>
+                    <p class="price">$15.99 <span>20.99</span></p>
+                </div>
+            </div>
+            <div class="procof" id="procof">
+                <div class="icons">
+                    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                    <div class="fas fa-heart" id="heart-btn"></div>
+                    <div class="fas fa-eye" id="search-btn"></div>
+                </div>
+                <div class="content">
+                    <img src="/images/Don Francisco.png" alt="">
+                    <h3>Don Francisco Coffee</h3>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star" id="search-btn"></div>
+                    <div class="fas fa-star-half-alt" id="search-btn"></div>
+                    <p class="price">$15.99 <span>20.99</span></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of the product -->
+
+    <!-- start of the customer review -->
+
+    <section class="customer" id="customer">
+
+        <h1>CUSTOMER'S <span>REVIEW</span></h1>
+
+        <div class="review">
+            <div class="view">
+                <img src="/images/quote-img.png" alt="">
+                <p>Any cup of coffee can be doctored up with a variety of sweeteners and creamers. Some people say that a good cup shouldn't need additives, but it's your coffee, so mix in whatever you want!</p>
+                <img class="img" src="/images/pic-1.png" alt=""> <br>
+                <P class="p1">John Deo</P>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star-half-alt" id="search-btn"></div>
+            </div>
+            <div class="view">
+                <img src="/images/quote-img.png" alt="">
+                <p>Any cup of coffee can be doctored up with a variety of sweeteners and creamers. Some people say that a good cup shouldn't need additives, but it's your coffee, so mix in whatever you want!</p>
+                <img class="img" src="/images/pic-2.png" alt=""> <br>
+                <P class="p1">John Deo</P>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star-half-alt" id="search-btn"></div>
+            </div>
+            <div class="view">
+                <img src="/images/quote-img.png" alt="">
+                <p>Any cup of coffee can be doctored up with a variety of sweeteners and creamers. Some people say that a good cup shouldn't need additives, but it's your coffee, so mix in whatever you want!</p>
+                <img class="img" src="/images/pic-3.png" alt=""> <br>
+                <P class="p1">John Deo</P>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star" id="search-btn"></div>
+                <div class="fas fa-star-half-alt" id="search-btn"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of customer review -->
+
+    <!-- start of the contact -->
+
+    <section class="contact" id="contact">
+
+        <h1><span>CONTACT</span> US</h1>
+
+        <form>
+
+            <h3>GET IN TOUCH</h3>
+
+            <div class="input">
+                <span class="fas fa-user"></span>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="input">
+                <span class="fas fa-envelope"></span>
+                <input type="email" name="email" placeholder="email" required>
+            </div>
+            <div class="input">
+                <span class="fas fa-phone"></span>
+                <input type="number" name="number" placeholder="Number" required>
+            </div>
+            <button type="submit" class="btn" > Contact Now </button>
+        </form>
+
+    </section>
+
+    <!-- end of the contact -->
+
+    <!-- start of the blog -->
+
+    <section class="blog" id="blogs">
+
+        <h1>OUR <span>BLOGS</span></h1>
+
+        <div class="coffeeblog">
+            <div class="blocof">
+                <div class="img2">
+                    <img src="/images/blogs-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div>Tasty And Refreshing Coffee</div>
+                    <span>By Admin / 29st Dec, 2021</span>
+                    <p>Its Amazing How The World Begins To Change, Through The Eyes Of A Cup Coffee..!</p>
+                    <a href="https://stories.starbucks.com/stories/2022/top-cold-coffee-picks-from-starbucks-baristas/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="blocof">
+                <div class="img2">
+                    <img src="/images/blogs-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div>Tasty And Refreshing Coffee</div>
+                    <span>By Admin / 29st Dec, 2021</span>
+                    <p>Its Amazing How The World Begins To Change, Through The Eyes Of A Cup Coffee..!</p>
+                    <a href="https://stories.starbucks.com/stories/2022/top-cold-coffee-picks-from-starbucks-baristas/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="blocof">
+                <div class="img2">
+                    <img src="/images/blogs-3.png" alt="">
+                </div>
+                <div class="content">
+                    <div>Tasty And Refreshing Coffee</div>
+                    <span>By Admin / 29st Dec, 2021</span>
+                    <p>Its Amazing How The World Begins To Change, Through The Eyes Of A Cup Coffee..!</p>
+                    <a href="https://stories.starbucks.com/stories/2022/top-cold-coffee-picks-from-starbucks-baristas/" target="_blank" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- end of the blog -->
+
+    <!-- start of the footer -->
+
+    <footer class="footer">
+
+        <div class="linkicon">
+            <div class="fab fa-facebook-f" id="search-btn"></div>
+            <div class="fab fa-instagram" id="search-btn"></div>
+            <div class="fab fa-twitter" id="search-btn"></div>
+            <div class="fab fa-linkedin" id="search-btn"></div>
+        </div>
+        <div class="link">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#products">products</a>
+            <a href="#customer">review</a>
+            <a href="#contact">contact</a>
+            <a href="#blogs">blogs</a>
+        </div>
+        <p>Created By <span>Bapu Kolpe</span> | All Rights Reserved</p>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

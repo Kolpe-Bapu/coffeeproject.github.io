@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#050101;
+    --bg:#050101;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+}
+
+/* start of the header */
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top:115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+}
+
+.header .search-form label:hover{
+    color:var(--main-color);
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding:0 1.5rem;
+}
+
+.header .cart-items-container.active{
+    right: 0;
+}
+
+.header .cart-items-container .cart-item .fa-times{
+    position: absolute;
+    top:1rem; right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cart-items-container .cart-item .fa-times:hover{
+    color:var(--main-color);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color:var(--main-color);
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
+/* end of the header */
+
+/* end of the home */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(../images/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.home .content .btn { 
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: #d3ad7f;
+    transition: all ease 0.2s;
+}
+
+.home .content .btn:hover { 
+    width: auto;
+    border-radius: 10px;
+}
+
+/* end of the home */
+
+/* end of the about */
+
+.about { 
+    color: #fff;
+}
+
+.about h1 { 
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.about h1 span { 
+    color: #d3ad7f;
+}
+
+.about .rowabout { 
+    display: flex;
+    align-items: center;
+    background-color: #13131a;
+}
+
+.about .rowabout .image img { 
+    height: 380px;
+}
+
+.about .rowabout .content { 
+    padding: 40px 15px;
+}
+
+.about .rowabout .content h4 { 
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .rowabout .content p { 
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 1rem 0;
+    color:#eee;
+}
+
+.about .rowabout .content .btn:hover { 
+    width: auto;
+    border-radius: 10px;
+}
+
+/* end of the about */
+
+/* start of the menu */
+
+.menu { 
+    color: #fff;
+}
+
+.menu h1 { 
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.menu h1 span { 
+    color: #d3ad7f;
+}
+
+.menu .tasty { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 3rem;
+}
+
+.menu .tasty .healthy { 
+    border: 0.5px solid rgb(84, 83, 83);
+    text-align: center;
+    margin: 7px;
+    padding: 50px;
+    height: 330px;
+    width: 340px;
+}
+
+.menu .tasty .healthy:hover{ 
+    background-color: rgb(228, 228, 228);
+    color: #000;
+}
+
+.menu .tasty .healthy img { 
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.menu .tasty .healthy h3 { 
+    font-size: 18px;
+}
+
+.menu .tasty .healthy .price { 
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.menu .tasty .healthy .price span { 
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.menu .tasty .healthy a { 
+    margin: 20px 5px;
+}
+
+.menu .tasty .healthy .btn1 { 
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background-color: #d3ad7f;
+    transition: all ease 0.2s;
+}
+
+.menu .tasty .healthy .btn1:hover { 
+    width: auto;
+    border-radius: 10px;
+}
+
+/* end of the menu */
+
+/* start of the products */
+
+.products { 
+    color: #fff;
+}
+
+.products h1 { 
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+
+}
+
+.products h1 span { 
+    color: #d3ad7f;
+}
+
+.products .procoffee { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .procoffee .procof { 
+    border: 0.5px solid rgb(84, 83, 83);
+    text-align: center;
+    margin: 7px;
+    padding: 30px;
+    height: 500px;
+    width: 360px;
+}
+
+.products .procoffee .procof .content img { 
+    height: 230px;
+    width: 170px;
+    transition: all ease 0.4s;
+}
+.products .procoffee .procof .content img:hover { 
+    transform: scale(1.1);
+}
+
+.products .procoffee .procof .content { 
+    font-size: 20px;
+}
+
+.products .procoffee .procof .content h3 { 
+    margin: 20px;
+}
+
+.products .procoffee .procof .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    padding: 15px;
+    border: 0.5px solid rgb(84, 83, 83);
+    border-radius: 50px;
+}
+
+.products .procoffee .procof .icons div:hover { 
+    color: #d3ad7f;
+}
+
+.products .procoffee .procof .content .fas { 
+    color: #d3ad7f;
+    margin-bottom: 2rem;
+}
+
+.products .procoffee .procof .content div { 
+    font-size: 17px;
+}
+
+.products .procoffee .procof .price span { 
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* end of the products */
+
+/* start of the customer */
+
+.customer { 
+    color: #fff;
+}
+
+.customer h1 { 
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+
+}
+
+.customer h1 span { 
+    color: #d3ad7f;
+}
+
+.customer .review { 
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.customer .review .view { 
+    padding: 15px;
+    margin: 10px;
+    border: 0.5px solid rgb(84, 83, 83);
+}
+
+.customer .review .view p { 
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.customer .review .view .p1 { 
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.customer .review .view img { 
+    margin: 20px 0;
+}
+
+.customer .review .view .img { 
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.customer .review .view div { 
+    font-size: 17px;
+    color: #d3ad7f;
+    margin: 10px 0;
+}
+
+/* end of the customer */
+
+/* start of the contact */
+
+.contact { 
+    color: #fff;
+}
+
+.contact h1 { 
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.contact h1 span { 
+    color: #d3ad7f;
+}
+
+.contact form { 
+    text-align: center;
+    background-color: #13131a;
+    padding: 25px;
+}
+
+.contact form h3 { 
+    font-size: 3.5rem;
+}
+
+.contact form .input { 
+    background-color: #000;
+    margin: 20px 0 20px 300px;
+    width: 500px;
+    border: 0.5px solid rgb(84, 83, 83);
+}
+
+.contact form .input input { 
+    background-color: #000;
+    font-size: 1.5rem;
+    width: 450px;
+    padding: 20px;
+    color: #eee;
+}
+
+.contact form .input span { 
+    font-size: 2rem;
+}
+
+/* end of the contact */
+
+/* start of the blog */
+
+.blog { 
+    color: #eee;
+}
+
+.blog h1 { 
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.blog h1 span { 
+    color: #d3ad7f;
+}
+
+.blog .coffeeblog { 
+    display: flex;
+}
+
+.blog .coffeeblog .blocof { 
+    border: 0.5px solid rgb(84, 83, 83);
+    margin: 10px;
+}
+
+.blog .coffeeblog .blocof .content { 
+    padding: 15px;
+}
+
+.blog .coffeeblog .blocof .img2 { 
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.blog .coffeeblog .blocof .img2 img { 
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+.blog .coffeeblog .blocof .img2 img:hover { 
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.blog .coffeeblog .blocof .content div { 
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.blog .coffeeblog .blocof .content div:hover { 
+    font-size: 2.5rem;
+    color: #d3ad7f;
+    cursor: pointer;
+}
+
+.blog .coffeeblog .blocof .content span { 
+    font-size: 2rem;
+    color: #d3ad7f;
+    margin: 1.5rem 0;
+}
+
+.blog .coffeeblog .blocof .content p { 
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+/* end of the blog */
+
+/* start of the footer */
+
+.footer { 
+    color: #fff;
+    text-align: center;
+    background-color: #13131a;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.footer .linkicon div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    padding: 15px;
+    border: 0.5px solid rgb(84, 83, 83);
+    border-radius: 100%;
+}
+
+.footer .linkicon div:hover { 
+    background-color: #d3ad7f;
+}
+
+.footer .linkicon .fa-facebook-f{
+    padding: 15px 18px;
+}
+
+.footer .link { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .link a { 
+    color: #fff;
+    font-size: 2rem;
+    margin: 20px 10px;
+    border: 0.5px solid rgb(84, 83, 83);
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all ease 0.4s;
+}
+
+.footer .link a:hover { 
+    background-color: #d3ad7f;
+    border-radius: 0;
+}
+
+.footer p { 
+    font-size: 2rem;
+    padding: 10px 0;
+    font-weight: lighter;
+}
+
+.footer p span { 
+    color: #d3ad7f;
+}
+
+/* end of the footer */
+
+/* Media Query */
+@media screen and (min-width: 300px) and (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+    h1 { 
+        font-size: 5px;
+    }
+
+    .about .rowabout { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #13131a;
+    }
+
+    .about .rowabout .image img { 
+        height: 230px;
+        width: 260px;
+    }
+
+    .menu .tasty .healthy a { 
+        margin: 20px 5px;
+    }
+    
+    .menu .tasty .healthy .btn1 { 
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .products .procoffee { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products .procoffee .procof { 
+        padding: 20px;
+        width: 260px;
+    }
+
+    .customer .review { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact form .input { 
+        margin: 20px 0 20px 0;
+        width: 220px;
+    }
+    
+    .contact form .input input { 
+        width: 180px;
+        padding: 10px;
+    }
+
+    .blog .coffeeblog { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer { 
+        padding: 10px;
+    }
+
+    .footer .link { 
+        margin: 0;
+    }
+
+    .footer .link a { 
+        font-size: 2rem;
+        margin: 10px 5px;
+        padding: 5px 15px;
+    }
+
+}
